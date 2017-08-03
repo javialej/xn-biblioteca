@@ -29,11 +29,11 @@ public class Prestamo implements Serializable{
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	protected Long id_prestamo;
 	
-	@ManyToOne(fetch=FetchType.EAGER)
+	@ManyToOne(fetch=FetchType.EAGER, targetEntity= Libro.class)
 	@JoinColumn(name="id_texto")
 	protected Texto texto;
 	
-	@ManyToOne(fetch=FetchType.EAGER)
+	@ManyToOne(fetch=FetchType.EAGER, targetEntity= Usuario.class)
 	@JoinColumn(name="id_persona")
 	protected Persona persona;
 	

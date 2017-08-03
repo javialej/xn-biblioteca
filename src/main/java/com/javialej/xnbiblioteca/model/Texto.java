@@ -1,6 +1,6 @@
 package com.javialej.xnbiblioteca.model;
 
-import java.util.Set;
+import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -45,7 +45,7 @@ public abstract class Texto {
 	@OneToMany(cascade=CascadeType.ALL)
 	@JoinColumn(name="id_texto")
 	@JsonIgnore
-	protected Set<Prestamo> prestamos;
+	protected List<Prestamo> prestamos;
 	
 	/*
 	 * Constructor vacio de Texto.
