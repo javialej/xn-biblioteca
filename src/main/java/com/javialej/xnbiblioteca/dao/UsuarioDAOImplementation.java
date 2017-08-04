@@ -22,21 +22,21 @@ public class UsuarioDAOImplementation extends AbstractSession implements Usuario
 	@Override
 	public int numeroDeLibrosPrestados(Long id_persona) {
 		// TODO Auto-generated method stub
-		return (int) getSession().createQuery("from prestamo where id_persona = :id_persona")
+		return (int) getSession().createQuery("from Prestamo where id_persona = :id_persona")
 				.setParameter("id_persona", id_persona).list().size(); 				
 	}
 
 	@Override
 	public List<Usuario> buscarPorNombre(String nombre) {
 		// TODO Auto-generated method stub
-		return (List<Usuario>) getSession().createQuery("from usuario where nombre = :nombre")
+		return (List<Usuario>) getSession().createQuery("from Usuario where nombre = :nombre")
 				.setParameter("nombre", nombre).list();
 	}
 
 	@Override
 	public List<Usuario> buscarPorEmail(String email) {
 		// TODO Auto-generated method stub
-		return (List<Usuario>) getSession().createQuery("from usuario where email = :email")
+		return (List<Usuario>) getSession().createQuery("from Usuario where email = :email")
 				.setParameter("email", email).list();
 	}
 

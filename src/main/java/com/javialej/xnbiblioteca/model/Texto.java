@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
  * nuevos textos como: Revistas, Periodicos, etc..., en el caso
  * en el caso que se llegue a requerir.
  */
+
 @MappedSuperclass
 public abstract class Texto {
 	

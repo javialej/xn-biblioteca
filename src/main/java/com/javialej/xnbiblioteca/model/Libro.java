@@ -10,6 +10,7 @@ import javax.persistence.Table;
  * @author Javier Alejandro Pérez, FRoM
  * @version 1.0.0-1-2017
  */
+
 @Entity
 @Table(name="libro")
 public class Libro extends Texto implements Serializable{

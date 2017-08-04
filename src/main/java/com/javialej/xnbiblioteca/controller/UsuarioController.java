@@ -84,10 +84,11 @@ public class UsuarioController {
 		return new ResponseEntity<String>(headers, HttpStatus.CREATED);		
 	}
 	
-	// PATCH usuario pide prestado libro
+	// POST usuario pide prestado libro
 	
 	
-	// PATCH usuario entrega libro
+	
+	// DELETE usuario entrega libro
 	
 	
 }
