@@ -10,7 +10,7 @@ public class MAINController {
 	@RequestMapping("/")
 	@ResponseBody
 	public String index() {
-		String response = "<h2> Bienvenido al Servidor Back-End </h2> <h1><b> XN-Biblioteca </b></h1>";
+		String response = "<h1><b> XN-Biblioteca </b></h1><h3> Bienvenido al Servidor Back-End </h3> ";
 		return response;
 	}
 }

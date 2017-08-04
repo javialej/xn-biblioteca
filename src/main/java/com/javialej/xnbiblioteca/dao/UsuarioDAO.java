@@ -8,9 +8,9 @@ public interface UsuarioDAO {
 	
 	void agregarUsuario(Usuario usuario); 				// saveBook
 	
-	int numeroDeLibrosPrestados(Usuario usuario);		// numberOfBooks  
+	int numeroDeLibrosPrestados(Long id_persona);		// numberOfBooks  
 	
-	List<Usuario> buscarPorNombreTitulo(String nombre);	// findByTitle
+	List<Usuario> buscarPorNombre(String nombre);	// findByTitle
 	
 	List<Usuario> buscarPorEmail(String email);  		// findByAuthor
 	
