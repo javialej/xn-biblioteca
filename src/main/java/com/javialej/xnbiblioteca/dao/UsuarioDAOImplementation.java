@@ -39,4 +39,10 @@ public class UsuarioDAOImplementation extends AbstractSession implements Usuario
 		return (List<Usuario>) getSession().createQuery("from usuario where email = :email")
 				.setParameter("email", email).list();
 	}
+
+	@Override
+	public Usuario buscarUsuarioPorId(Long id_persona) {
+		// TODO Auto-generated method stub
+		return (Usuario) getSession().get(Usuario.class, id_persona);
+	}
 }

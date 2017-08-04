@@ -66,6 +66,13 @@ public abstract class Texto {
 	}
 	
 	/*
+	 * @return Id del Texto.
+	 */
+	public Long getIdTexto() {
+		return id_texto;
+	}
+	
+	/*
 	 * @return titulo del Texto.
 	 */
 	public String getTitulo() {

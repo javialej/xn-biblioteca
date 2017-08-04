@@ -15,4 +15,6 @@ public interface LibroService {
 	List<Libro> mostrarLibros();  				// findAllBooks
 	
 	boolean consultarDisponibilidadLibro(Long id_texto);		// findByBookAvailability
+	
+	Libro buscarLibroPorId(Long id_texto);
 }

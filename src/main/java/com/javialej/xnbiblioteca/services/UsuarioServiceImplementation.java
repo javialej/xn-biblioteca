@@ -40,4 +40,10 @@ public class UsuarioServiceImplementation implements UsuarioService{
 		// TODO Auto-generated method stub
 		return _usuarioDAO.buscarPorEmail(email);
 	}
+
+	@Override
+	public Usuario buscarUsuarioPorId(Long id_persona) {
+		// TODO Auto-generated method stub
+		return _usuarioDAO.buscarUsuarioPorId(id_persona);
+	}
 }

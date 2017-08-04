@@ -14,7 +14,9 @@ public interface LibroDAO {
 	
 	List<Libro> mostrarLibros();  				// findAllBooks
 	
-	boolean consultarDisponibilidadLibro(Long id_teacher);		// findByBookAvailability
+	boolean consultarDisponibilidadLibro(Long id_texto);		// findByBookAvailability
+	
+	Libro buscarLibroPorId(Long id_texto);
 	
 	/* ------------------------------------------------------------ */
 	

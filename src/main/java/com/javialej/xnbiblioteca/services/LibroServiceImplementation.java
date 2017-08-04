@@ -46,5 +46,10 @@ public class LibroServiceImplementation implements LibroService{
 		// TODO Auto-generated method stub
 		return _libroDAO.consultarDisponibilidadLibro(id_texto);
 	}
-
+	
+	@Override
+	public Libro buscarLibroPorId(Long id_texto) {
+		// TODO Auto-generated method stub
+		return _libroDAO.buscarLibroPorId(id_texto);
+	}
 }

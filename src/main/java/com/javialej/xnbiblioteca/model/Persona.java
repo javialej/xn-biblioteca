@@ -59,6 +59,13 @@ public abstract class Persona {
 	}
 	
 	/*
+	 * @return Id de la Persona.
+	 */
+	public Long getIdPersona() {
+		return id_persona;
+	}
+	
+	/*
 	 * @return nombre de la Persona.
 	 */
 	public String getNombre() {

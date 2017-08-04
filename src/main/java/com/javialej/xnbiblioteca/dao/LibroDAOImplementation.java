@@ -44,4 +44,10 @@ public class LibroDAOImplementation extends AbstractSession implements LibroDAO{
 		return (boolean) getSession().createQuery("select disponible from libro where id_texto = :id_texto").setParameter("id_texto", id_texto).uniqueResult(); 
 	}
 
+	@Override
+	public Libro buscarLibroPorId(Long id_texto) {
+		// TODO Auto-generated method stub
+		return (Libro) getSession().get(Libro.class, id_texto);
+	}
+
 }

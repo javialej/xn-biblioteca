@@ -10,7 +10,9 @@ public interface UsuarioService {
 	
 	int numeroDeLibrosPrestados(Long id_persona);		// numberOfBooks  
 	
-	List<Usuario> buscarPorNombre(String nombre);	// findByTitle
+	List<Usuario> buscarPorNombre(String nombre);		// findByTitle
 	
 	List<Usuario> buscarPorEmail(String email);  		// findByAuthor
+	
+	Usuario buscarUsuarioPorId(Long id_persona);
 }
