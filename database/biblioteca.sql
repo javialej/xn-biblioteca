@@ -30,6 +30,6 @@ CREATE TABLE `prestamo` (
   PRIMARY KEY (`id_prestamo`),
   KEY `id_texto_idx` (`id_texto`),
   KEY `id_persona_idx` (`id_persona`),
-  CONSTRAINT `id_persona` FOREIGN KEY (`id_persona`) REFERENCES `usuario` (`id_persona`) ON DELETE NO ACTION ON UPDATE CASCADE,
-  CONSTRAINT `id_texto` FOREIGN KEY (`id_texto`) REFERENCES `libro` (`id_texto`) ON DELETE NO ACTION ON UPDATE CASCADE
+  CONSTRAINT `id_persona` FOREIGN KEY (`id_persona`) REFERENCES `usuario` (`id_persona`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `id_texto` FOREIGN KEY (`id_texto`) REFERENCES `libro` (`id_texto`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

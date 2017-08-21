@@ -20,6 +20,7 @@ import javax.persistence.OneToMany;
  * nuevos roles de personas: Bibliotecario, Administrador, etc..., 
  * en el caso que se llegue a requerir.
  */
+
 @MappedSuperclass
 public abstract class Persona {
 	

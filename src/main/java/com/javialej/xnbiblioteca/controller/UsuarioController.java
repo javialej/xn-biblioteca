@@ -49,7 +49,7 @@ public class UsuarioController {
 			}
 		}
 						
-		return new ResponseEntity("Servicio no disponible", HttpStatus.SERVICE_UNAVAILABLE);
+		return new ResponseEntity(usuarios, HttpStatus.OK);
 	}
 	
 	
@@ -83,12 +83,5 @@ public class UsuarioController {
 		headers.setLocation(ucBuilder.path("/v1/usuarios/{id}").buildAndExpand(usuario.getIdPersona()).toUri());
 		return new ResponseEntity<String>(headers, HttpStatus.CREATED);		
 	}
-	
-	// POST usuario pide prestado libro
-	
-	
-	
-	// DELETE usuario entrega libro
-	
 	
 }
